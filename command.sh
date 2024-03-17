@@ -24,6 +24,12 @@ wp --allow-root post delete 1 2 --force
 # サンプルのコメントを削除
 wp --allow-root comment delete 1 --force
 
+# テーマを全削除
+#wp theme delete --all
+
+# プラグインを一旦すべて削除する
+wp plugin delete --all
+
 # 必要なプラグインインストール
 wp --allow-root plugin install wp-multibyte-patch --activate
 wp --allow-root plugin install query-monitor --activate
